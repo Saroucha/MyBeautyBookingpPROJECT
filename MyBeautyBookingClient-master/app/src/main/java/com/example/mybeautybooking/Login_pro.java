@@ -127,7 +127,7 @@ public class Login_pro extends AppCompatActivity {
             case LoginTask:
                 if (parseContent.isSuccess(response)) {
                     parseContent.saveInfo(response);
-                    Toast.makeText(Login_pro.this, "Login Successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login_pro.this, "Connexion réussie!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Login_pro.this,Profile_Pro.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
