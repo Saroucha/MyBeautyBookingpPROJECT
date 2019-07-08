@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="activity.Main_Act_Map_Listpro">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/TextAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:text="Ils se déplacent chez moi :  "
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:name="com.example.mamapp.MapFragment"
+        android:layout_width="411dp"
+        android:layout_height="186dp"
+        android:layout_alignTop="@+id/TextAdresse"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8px"
+        android:layout_below="@+id/fragment"
+        android:padding="6dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:background="@color/colorblack" />
+
+    <FrameLayout
+        android:id="@+id/fragment3"
+        android:name="com.example.mamapp.ListProFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logout"
+        android:layout_below="@+id/fragment"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Accéder aux ventes privées de cette recherche"
+        android:textStyle="bold"
+        android:background="@color/colorblack"
+        android:layout_gravity="right"
+        android:textColor="@color/colorwhite"
+        android:id="@+id/logout"
+        android:textSize="14dp" />
+
+</RelativeLayout>

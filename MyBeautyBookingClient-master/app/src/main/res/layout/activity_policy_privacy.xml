@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrivacyPolicyActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <TextView
+            android:layout_marginTop="-200dp"
+            android:layout_width="290dp"
+            android:fontFamily="@font/beautiful"
+            android:textSize="30dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorblack"
+            android:text="Politiques de confidentialité"
+            android:layout_height="120dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

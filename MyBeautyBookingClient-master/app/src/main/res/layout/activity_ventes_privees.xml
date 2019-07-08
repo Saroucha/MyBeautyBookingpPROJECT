@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="VentesPriveesActivity"
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <TextView
+            android:layout_marginTop="-200dp"
+            android:layout_width="270dp"
+            android:fontFamily="@font/beautiful"
+            android:textSize="30dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorblack"
+            android:text="Ventes Privées"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_vente"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Déconnexion"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/gaffer"
+            android:background="@color/colorblack"
+            android:textColor="@color/colorwhite"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

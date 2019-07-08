@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context=".Inscription_pro">
+
+        <LinearLayout
+            android:id="@+id/btnlayou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="73dp"
+            android:background="@color/colorwhite"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:background="@drawable/defile2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:text="Inscription professionnelle"
+
+                    android:textColor="@color/colorwhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+            <ImageView
+
+                android:layout_width="55dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="34dp"
+                android:padding="6dp"
+                android:src="@drawable/logo" />
+
+
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="-80dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="350dp"
+
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/sofia"
+                android:text="Informations personnelles :"/>
+
+            <EditText
+                android:id="@+id/NomC"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Saisir votre nom complet"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtNom"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/adresseDomicile"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/imageView"
+                android:hint="Je me déplace à partir de"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtAdresse"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/adressePostale"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:layout_above="@id/adresseDomicile"
+                android:hint="Saisir votre code postal"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtPostale"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <EditText
+                android:id="@+id/distance"
+                android:layout_width="250dp"
+                android:inputType="number"
+                android:maxLength="35"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/adressePostale"
+                android:hint="Saisir la distance de déplacement à partir de votre ville "
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="250dp"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mcgpalette0_900"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/sofia"
+                android:text="Choisir une catégorie :"/>
+            <Spinner
+                android:id="@+id/simpleSpinner"
+                android:layout_width="250dp"
+                android:padding="22dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="5sp"
+                />
+            <TextView
+                android:id="@+id/txtCatego"
+                android:layout_width="250dp"
+                android:textColor="@color/colorblack"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/sofia"
+                android:text="Contact :"/>
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/NomC"
+                android:hint="Saisir votre Email"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/tel"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mdp"
+                android:maxLength="13"
+                android:hint="Saisir un téléphone"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtTel"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <EditText
+                android:id="@+id/mdp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mail"
+                android:hint="Saisir un mot de passe"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtMdp"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insérer une photo : "
+                android:layout_above="@+id/tel"
+                android:fontFamily="@font/sofia"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/buttonSelect"
+                android:background="@mipmap/ic_photo"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="270dp"
+                android:visibility="gone"
+                android:id="@+id/imageView"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informations entreprise :"
+                android:id="@+id/txtEntreprise"
+                android:layout_above="@+id/adressePostale"
+                android:textStyle="bold"
+                android:fontFamily="@font/sofia"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/nomEntreprise"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtEntreprise"
+                android:hint="Saisir le nom de votre entreprise ou dénomination"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtNomEntreprise"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/registreCommercial"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="14"
+                android:layout_above="@+id/nomEntreprise"
+                android:hint="Saisir le n° Siret"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtRegistre"
+                android:layout_width="250dp"
+                android:textColor="@color/mcgpalette0_900"
+                android:layout_height="wrap_content"
+                android:textSize="6dp"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/registreCommercial"
+                android:hint="Saisir un lien vers vos références professionnelles "
+                android:textSize="10sp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:scrollbars="vertical"/>
+            <TextView
+                android:id="@+id/txtDescription"
+                android:textColor="@color/mcgpalette0_900"
+                android:layout_width="250dp"
+                android:textSize="6dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrer >>"
+                    android:textColor="#FFF"
+                    android:background="@color/colorblack"
+                    android:id="@+id/buttonUpload"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

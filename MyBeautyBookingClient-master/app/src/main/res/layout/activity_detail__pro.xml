@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context="activity.Detail_Pro">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorwhite"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="102dp"
+           android:layout_gravity="center"
+            android:padding="5dp"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Détails du professionnel:"
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="573dp"
+        android:layout_below="@+id/affich"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="32dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorblack"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/categorie"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorblack"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorblack"
+            android:textSize="15sp"
+             />
+
+
+        <TextView
+            android:id="@+id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/sofia"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorblack"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/lien"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/siret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget.DropDownItem"
+            android:textColor="@color/colorblack"
+            android:textSize="10dp"
+             />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

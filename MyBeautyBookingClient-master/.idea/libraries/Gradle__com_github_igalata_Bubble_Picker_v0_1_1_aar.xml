@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.igalata:Bubble-Picker:v0.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Bubble-Picker-v0.1.1.aar/24c4de4c5a8637dda533f64a7c25aae2/jars/libs/jbox2d-library-2.1.2.2.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Bubble-Picker-v0.1.1.aar/24c4de4c5a8637dda533f64a7c25aae2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Bubble-Picker-v0.1.1.aar/24c4de4c5a8637dda533f64a7c25aae2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Bubble-Picker-v0.1.1.aar/24c4de4c5a8637dda533f64a7c25aae2/jars/libs/slf4j-api-1.7.22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
